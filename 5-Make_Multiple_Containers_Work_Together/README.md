@@ -87,15 +87,15 @@ Docker is the only thing you need from now on! So let's get started spinning the
 
 **REMEMBER the dot is a relative file path to where your Dockerfile lives (one is included for each server), so MAKE SURE you are cd'd into the correct directory before running this command**
 
-- [ ] Build your results server image and tag it with the name 'results' by running `docker build -t results .`
+- [x] Build your results server image and tag it with the name 'results' by running `docker build -t results .`
 
-- [ ] Pull down a MongoDB image by running `docker pull mongo:latest`
+- [x] Pull down a MongoDB image by running `docker pull mongo:latest`
 
 This saves us a lot of time - since we straight up just need a MongoDB database and don't need to configure it in any way we'll just pull the official image from Dockerhub. As with every other time you used the `docker pull` command it grabs the image from Dockerhub and caches it on your machine. This time is no different. However, the way you spin up the official MongoDB image is a little different than we are used to; let's check it out ->
 
 **Second:** Run the containers:
 
-- [ ] First, we'll spin up the MongoDB container. Run `docker run -d --name mongo mongo:latest`
+- [x] First, we'll spin up the MongoDB container. Run `docker run -d --name mongo mongo:latest`
 
 You might be wondering, **'Where's the -p port mapping option that we've used EVERY OTHER TIME?!?!?'**
 
